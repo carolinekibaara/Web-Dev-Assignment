@@ -12,6 +12,23 @@ body {
     color: #333;
 }
 
+@media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+    .nav {
+      flex-direction: column;
+    }
+  }
+  
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 24px;
+    }
+  }
+  
+
 /* Profile Section */
 .profile-section {
     display: flex;
@@ -21,20 +38,20 @@ body {
     padding: 50px 20px;
 }
 
-.services {
+.skills {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     max-width: 600px;
 }
 
-.service-item h4 {
+.skills-item h4 {
     font-size: 18px;
     color: #008080;
     margin-bottom: 8px;
 }
 
-.service-item p {
+.skills-item p {
     font-size: 14px;
     color: #666;
 }
@@ -114,7 +131,7 @@ body {
 }
 
 /* Footer */
-.footer {
+.icon {
     background: #4c8c5a; /* lighter green */
     padding: 40px 20px;
 }
@@ -131,3 +148,28 @@ body {
     width: 60px; /* smaller icons */
     height: auto;
 }
+.services {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  .services h2 {
+    margin-bottom: 40px;
+  }
+  .services-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+  }
+  .card i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #00c89b;
+  }
