@@ -1,300 +1,532 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profile Section</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-      integrity="sha512-..."
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <section class="profile-card">
-      <div class="profile-image">
-          <img src="images\im.PNG" alt="John Watson">
-      </div>
-      <div class="profile-info">
-          <h3 class="profile-subtitle">MY BIOGRAPHY</h3>
-          <h2 class="profile-title">A Lead UI Designer & Web Developer Based In UK</h2>
-          <p class="profile-description">I love Graphic design and Photography and have been working on my portfolio since 2016. I Can give your business a new Creative start right away! Contact me and we will discuss your projects!</p>
-          
-          <div class="profile-details">
-              <div class="detail-item">
-                  <span class="detail-label">Name:</span>
-                  <span class="detail-value">John Watson</span>
-              </div>
-              <div class="detail-item">
-                  <span class="detail-label">From:</span>
-                  <span class="detail-value">London, UK</span>
-              </div>
-              <div class="detail-item">
-                  <span class="detail-label">Email:</span>
-                  <span class="detail-value">example@mail.com</span>
-              </div>
-              <div class="detail-item">
-                  <span class="detail-label">Phone:</span>
-                  <span class="detail-value">+21 234 567 8901</span>
-              </div>
-          </div>
-          
-          <div class="social-section">
-              <div class="social-title">Follow me on</div>
-              <div class="social-icons">
-                  <a href="#" class="social-icon behance">Be</a>
-                  <a href="#" class="social-icon linkedin">in</a>
-                  <a href="#" class="social-icon dribbble">Dr</a>
-                  <a href="#" class="social-icon twitter">Tw</a>
-              </div>
-          </div>
-          
-          <div class="action-buttons">
-              <a href="#" class="btn btn-hire">Hire me</a>
-              <a href="#" class="btn btn-download">Download CV</a>
-          </div>
-      </div>
-    </section>
 
-    <section class="services">
-      <h2>What I Do For You</h2>
-      <div class="services-cards">
-        <div class="card">
-          <i class="fas fa-code"></i>
-          <h3>Web Development</h3>
-          <p>
-            Hey there! I'm a web developer who loves turning ideas into
-            beautiful, functional websites. I enjoy playing with code, designing
-            smooth user experiences, and constantly learning new tools and
-            tricks. Whether it’s building a simple landing page or a complex
-            app, I’m all about creating things that people love to use. When I’m
-            not coding, you’ll probably find me exploring new tech, gaming, or
-            chasing sunsets.
-          </p>
-        </div>
-        <div class="card">
-          <i class="fas fa-mobile-alt"></i>
-          <h3>App Development</h3>
-          <p>
-            I’m an app developer with a strong background in building
-            cross-platform applications using technologies like Flutter, React
-            Native, and native iOS/Android. My work focuses on creating
-            efficient, scalable, and user-centric mobile solutions. I’m
-            passionate about clean architecture, performance optimization, and
-            delivering apps that not only function flawlessly but also provide
-            an exceptional user experience.
-          </p>
-        </div>
-        <div class="card">
-          <i class="fas fa-camera"></i>
-          <h3>Photography</h3>
-          <p>
-            I'm a photographer who’s passionate about capturing authentic
-            moments and telling stories through my lens. Whether it’s a quiet
-            landscape, a lively event, or a simple everyday scene, I believe
-            every picture holds a piece of magic. I'm all about chasing the
-            perfect light, embracing spontaneity, and creating images that feel
-            alive.
-          </p>
-        </div>
-      </div>
-      <div style="margin-top: 20px">
-        <a href="#" style="color: #00c89b; font-weight: bold"
-          >More Services →</a
-        >
-      </div>
-    </section>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>UI Portfolio</title>
 
-    <!--My Skills Section-->
-    <setion class="My-Skills">
-      <div class="skills-container">
-        <div class="skills-images">
-            <div class="skills-image">
-                <img src="images/Workspace1.jpg" alt="Design notebook and tools">
+    <!-- google-fonts -->
+    <link href="http://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;800&amp;display=swap" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <!-- //google-fonts -->
+
+    <!-- Template CSS Style link -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<style>
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+</style>
+
+
+
+    <!--header-->
+    <header id="site-header" class="fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg stroke">
+                <h1>
+                    <a class="navbar-brand" href="index.html">
+                        <i class="fab fa-asymmetrik"></i> UI Portfolio
+                    </a>
+                </h1>
+                <button class="navbar-toggler collapsed bg-gradient" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ms-lg-auto align-items-center">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#home">Home <span class="sr-only"></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+
+                        <!--/right-btn-->
+                        <div class="header-btn mx-2">
+                            <a class="btn btn-style btn-primary mr-lg-5" href="#contact"> Hire Me</a>
+                        </div>
+                        <!--/right-btn-->
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--//header-->
+
+
+
+
+    <!-- banner section -->
+<section id="home" class="group-banner pt-5">
+    <div class="container pt-lg-5 pt-md-4">
+        <div class="row pt-lg-5 pt-4">
+            <div class="col-lg-7 banner-info-grid pt-lg-0 pt-5">
+                <h1 class="mb-3">Hi, I'm John Watson</h1>
+                <h3 class="mb-4"> <span class="typed-text"></span><span class="cursor">&nbsp</span> </h3>
+                <p>I love Graphic design and Photography and have been working on my portfolio since 2016. I Can
+                    give your business a new Creative start right away!</p>
+                
+                <a class="btn btn-primary btn-style mt-5 me-2" href="#contact"> Hire Me </a>
+                <a class="btn btn-style transparent-btn mt-5" href="#portfolio"> My Portfolio </a>
+                
             </div>
-            <br><br>
-            <div class="skills-image">
-                <img src="images/Workspace2.jpg" alt="Creative workspace with designs and glasses">
+            <div class="col-lg-5 text-lg-end my-image mt-lg-0 mt-4">
+                <img src="images/banner.jpg" class="img-fluid" />
             </div>
         </div>
-        <div class="skills-content">
-            <p class="skills-label">My Skills</p>
-            <h2 class="skills-heading">My Featured Skills</h2>
-            <br><br><br>
-            <p class="skills-description">I specialize in Branding and Strategy, and am passionate about creating Awesome Portfolio work. And I always ready to impress the audience with my Creativity.</p>
-            
-            <div class="skill-bar">
-                <p class="skill-name">UI/UX Design</p>
-                <div class="progress-bar">
-                    <div class="progress ui-ux"></div>
-                </div>
+    </div>
+</section>
+<!-- //banner section -->
+
+
+
+    <!-- About Section-->
+<section class="group-about py-5" id="about">
+    <div class="container py-md-5 py-2">
+        <div class="row group-row">
+            <div class="col-lg-5 my-image pe-lg-5 mb-lg-0 mb-md-5 mb-4">
+                <img src="images/banner.jpg" alt="" class="img-fluid">
             </div>
-            
-            <div class="skill-bar">
-                <p class="skill-name">Ideas & Technology</p>
-                <div class="progress-bar">
-                    <div class="progress ideas"></div>
+            <div class="col-lg-7 group-about-info px-lg-4 align-center">
+                <h6 class="group-title-small mb-1">My Biography</h6>
+                <h3 class="group-title-main mb-2">A Lead UI Designer & Web Developer based in UK</h3>
+                <p class="my-4 pe-lg-5">I love Graphic design and Photography and have been working on my portfolio since 2016. I Can give your business a new Creative start right away! Contact me and we will discuss your projects!</p>
+                <div class="my-info mt-4">
+                    <div class="single-info"><span>Name:</span>
+                        <p>John Watson</p>
+                    </div>
+                    <div class="single-info"><span>From:</span>
+                        <p>London, UK</p>
+                    </div>
+                    <div class="single-info"><span>Email:</span>
+                        <p><a href="#"><span>email</span></a></p>
+                    </div>
+                    <div class="single-info"><span>Phone:</span>
+                        <p><a href="tel:+21 234 567 8901">+21 234 567 8901</a></p>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="skill-bar">
-                <p class="skill-name">Branding Design</p>
-                <div class="progress-bar">
-                    <div class="progress branding"></div>
-                </div>
-            </div>
-            
-            <div class="skill-bar">
-                <p class="skill-name">Responsive Web Design</p>
-                <div class="progress-bar">
-                    <div class="progress responsive"></div>
+
+                <ul class="follow-social mt-lg-5 mt-4">
+                    <li>
+                        <h5 class="me-md-3">Follow me on </h5>
+                    </li>
+
+                    <li><a href="#"><span class="fab fa-whatsapp"></span></a>
+                    </li>
+
+                    <li><a href="#"><span class="fab fa-linkedin-in"></span></a>
+                    </li>
+
+                    <li><a href="#">
+                            <span class="fab fa-facebook-f"></span></a></li>
+
+                    <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+
+                </ul>
+                <div class="group-btn">
+                    <a href="#footer" class="btn btn-style btn-primary mt-lg-5 mt-4 me-md-2">Hire me</a>
+                    <a href="#download-cv" class="btn btn-style btn-secondary mt-lg-5 mt-4">Download CV</a>
                 </div>
             </div>
         </div>
     </div>
-    </setion>
-    <section class="profile-section">
-      <div class="skills">
-        <div class="service-item">
-          <h4><i class="fas fa-code"></i> Web Development</h4>
-          <p>
-            Building modern, high-performance websites with clean code and
-            user-friendly interfaces.
-          </p>
+</section>
+<!-- //About Section-->
+
+
+
+   <!-- Services Section -->
+<section class="about-section py-5" id="services">
+    <div class="container py-lg-5 py-md-4 py-2">
+        <div class="title-heading-group mx-auto text-center mb-sm-5 mb-4">
+            <h3 class="group-title-main">What I do for you</h3>
         </div>
-        <div class="skills-item">
-          <h4><i class="fas fa-paint-brush"></i> Design Trends</h4>
-          <p>
-            Creating visually appealing designs that align with the latest
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6">
+                <div class="about-single">
+                    <div class="about-icon mb-4">
+                        <i class="fas fa-chalkboard"></i>
+                    </div>
+                    <div class="about-content">
+                        <h5 class="mb-3"><a href="#url">Web Development</a></h5>
+                        <p> Hey there! I'm a web developer who loves turning ideas into
+                          beautiful, functional websites. I enjoy playing with code, designing
+                          smooth user experiences, and constantly learning new tools and
+                          tricks. Whether it’s building a simple landing page or a complex
+                          app, I’m all about creating things that people love to use. When I’m
+                          not coding, you’ll probably find me exploring new tech, gaming, or
+                          chasing sunsets.
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-md-0 mt-3">
+                <div class="about-single">
+                    <div class="about-icon mb-4">
+                        <i class="fab fa-app-store"></i>
+                    </div>
+                    <div class="about-content">
+                        <h5 class="mb-3"><a href="#url"> App development</a></h5>
+                        <p>
+                          I’m an app developer with a strong background in building
+                          cross-platform applications using technologies like Flutter, React
+                          Native, and native iOS/Android. My work focuses on creating
+                          efficient, scalable, and user-centric mobile solutions. I’m
+                          passionate about clean architecture, performance optimization, and
+                          delivering apps that not only function flawlessly but also provide
+                          an exceptional user experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-lg-0 mt-3">
+                <div class="about-single">
+                    <div class="about-icon mb-4">
+                        <i class="fas fa-camera-retro"></i>
+                    </div>
+                    <div class="about-content">
+                        <h5 class="mb-3"><a href="#url"> Photography</a></h5>
+                        <p>
+                          I'm a photographer who’s passionate about capturing authentic
+                          moments and telling stories through my lens. Whether it’s a quiet
+                          landscape, a lively event, or a simple everyday scene, I believe
+                          every picture holds a piece of magic. I'm all about chasing the
+                          perfect light, embracing spontaneity, and creating images that feel
+                          alive.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="group-btn text-center">
+            <a href="services.html" class="btn btn-border mt-lg-5 mt-4 me-2">
+                More services <span class="fas fa-long-arrow-alt-right"></span></a>
+        </div>
+    </div>
+</section>
+<!-- //Services Section -->
+
+
+
+
+
+    <!-- Skills Section -->
+<section class="group-skills py-5" id="skills">
+    <div class="container py-lg-5 py-md-4 py-3">
+        <div class="row">
+            <div class="col-lg-6 pe-lg-5">
+                <img src="images/banner.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-lg-6 mt-lg-0 mt-5 group-content-6 px-lg-4 align-self-center">
+                <h6 class="group-title-small mb-2">My skills</h6>
+                <h3 class="group-title-main">My Featured skills</h3>
+                <p class="mt-4">I Specialize in Branding and Strategy, and am passionate about creating Awesome
+                    Portfolio work. And I always ready to impress the audience with my Creativity. </p>
+                <div class="progress-info mt-5">
+                    <h6 class="progress-tittle">UI/UX Design</h6>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-info">
+                    <h6 class="progress-tittle">Ideas &amp; Technology
+                    </h6>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-info">
+                    <h6 class="progress-tittle">Branding Design</h6>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-info mb-0">
+                    <h6 class="progress-tittle">Responsive Web Design</h6>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //Skills Section -->
+
+
+
+   <!-- Why Choose Us Section-->
+<section class="group-whychooseus pt-5" id="about1">
+    <div class="container pt-lg-0 pt-md-4 pt-2">
+        <div class="row align-items-center">
+            <div class="col-lg-7 pe-lg-5 align-items-center">
+                <div class="row two-grids">
+                    <div class="col-sm-6 grids_info d-flex">
+                        <i class="fab fa-chalkboard"></i>
+                        <div class="detail ms-3">
+                            <h4 class="group-subtitle">Web Development</h4>
+                            <p>
+                              Building modern, high-performance websites with clean code and
+                              user-friendly interfaces.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 grids_info d-flex mt-sm-0 mt-4">
+                        <i class="fab fa-css3-alt"></i>
+                        <div class="detail ms-3">
+                            <h4 class="group-subtitle">Design Trends</h4>
+                            <p>
+                              Creating visually appealing designs that align with the latest
             industry trends and styles.
-          </p>
-        </div>
-        <div class="skills-item">
-          <h4><i class="fas fa-chart-line"></i> Research & Analysis</h4>
-          <p>
-            Conducting in-depth research to deliver data-driven solutions
-            tailored to your needs.
-          </p>
-        </div>
-        <div class="skills-item">
-          <h4><i class="fas fa-headset"></i> Customer Support</h4>
-          <p>
-            Providing fast, reliable, and friendly support to ensure complete
-            customer satisfaction.
-          </p>
-        </div>
-        <div class="skills-item">
-          <h4><i class="fas fa-mobile-alt"></i> Responsive Design</h4>
-          <p>
-            Designing mobile-friendly websites that look perfect on all devices
-            and screen sizes.
-          </p>
-        </div>
-        <div class="skills-item">
-          <h4><i class="far fa-file-image"></i> PSD Design</h4>
-          <p>
-            Crafting high-quality Photoshop designs ready for web development
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 grids_info d-flex mt-md-5 mt-4">
+                        <i class="fas fa-chart-line"></i>
+                        <div class="detail ms-3">
+                            <h4 class="group-subtitle">Research & Analysis</h4>
+                            <p>
+                              Conducting in-depth research to deliver data-driven solutions
+                tailored needs
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 grids_info d-flex mt-md-5 mt-4">
+                        <i class="fas fa-headset"></i>
+                        <div class="detail ms-3">
+                            <h4 class="group-subtitle">Customer support</h4>
+                            <p> Providing fast, reliable, and friendly support to ensure complete
+                              customer satisfaction.
+                        </div>
+                    </div>
+                    <div class="col-sm-6 grids_info d-flex mt-md-5 mt-4">
+                        <i class="fas fa-mobile-alt"></i>
+                        <div class="detail ms-3">
+                            <h4 class="group-subtitle">Responsive design</h4>
+                            <p>
+                              Designing mobile-friendly websites that look perfect on all devices
+                              and screen sizes.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 grids_info d-flex mt-md-5 mt-4">
+                        <i class="fas fa-layer-group"></i>
+                        <div class="detail ms-3">
+                            <h4 class="group-subtitle">PSD Design</h4>
+                            <p>
+                              Crafting high-quality Photoshop designs ready for web development
             and branding projects.
-          </p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 ps-lg-5 my-image mt-lg-0 mt-4">
+                <img src="images/banner.jpg" alt="" class="img-fluid">
+            </div>
         </div>
-      </div>
+    </div>
+</section>
+<!-- //Why Choose Us Section-->
 
-      <div class="profile-image">
-        <img src="Images/Headshot.jpg" alt="Profile Image" />
-      </div>
-    </section>
 
-    <section class="stats">
-      <div class="stat-item">
-        <h3>135</h3>
-        <p>Finished Projects</p>
-      </div>
-      <div class="stat-item">
-        <h3>225</h3>
-        <p>Working Hours</p>
-      </div>
-      <div class="stat-item">
-        <h3>115</h3>
-        <p>Online Support</p>
-      </div>
-      <div class="stat-item">
-        <h3>272</h3>
-        <p>Happy Customers</p>
-      </div>
-    </section>
 
-    <!-- New Success Work Section Below -->
 
-    <section class="success-work">
-      <div class="success-container">
-        <h2>My Success Work</h2>
-        <div class="gallery-container">
-          <div class="gallery">
-            <img src="images/img1.jpg" alt="Work Image 1" />
-            <img src="images/img2.jpg" alt="Work Image 2" />
-            <img src="images/img3.jpg" alt="Work Image 3" />
-            <img src="images/img4.jpg" alt="Work Image 4" />
-            <img src="images/img5.jpg" alt="Work Image 5" />
-            <img src="images/img6.jpg" alt="Work Image 6" />
-          </div>
+    
+   <!-- Stats Section-->
+<section class="group-stats-section py-5" id="stats">
+    <div class="container py-lg-5 py-md-4 py-2">
+        <div class="group-stats-inner-inf py-lg-4">
+            <div class="row stats-con text-center">
+                <div class="col-lg-3 col-6 stats_info counter_grid">
+                    <p class="counter"> 1500 </p>
+                    <h3>Finished Projects</h3>
+                </div>
+                <div class="col-lg-3 col-6 stats_info counter_grid">
+                    <p class="counter"> 2500 </p>
+                    <h3>Working Hours</h3>
+                </div>
+                <div class="col-lg-3 col-6 stats_info counter_grid mt-lg-0 mt-sm-5 mt-5">
+                    <p class="counter"> 1280 </p>
+                    <h3>Online Support</h3>
+                </div>
+                <div class="col-lg-3 col-6 stats_info counter_grid mt-lg-0 mt-sm-5 mt-5">
+                    <p class="counter"> 3020 </p>
+                    <h3>Happy Customers</h3>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="icon">
-        <div class="footer-icons">
-          <img src="images/icon1.jpg" alt="Gluten Free" />
-          <img src="images/icon2.jpg" alt="Massage & Spa" />
-          <img src="images/icon3.jpg" alt="Butchery Certified" />
-          <img src="images/icon4.jpg" alt="100% Natural" />
+    </div>
+</section>
+<!-- //Stats Section-->
+
+
+
+    <!-- portfolio -->
+<section class="group-gallery py-5" id="projects">
+    <div class="container py-lg-5 py-md-4 py-2">
+        <div class="title-heading-group mx-auto text-center mb-sm-5 mb-4">
+            <h3 class="group-title-main mb-2">My Success Work</h3>
         </div>
-      </div>
-    </section>
-    <footer
-      style="
-        background-color: #0f1f1f;
-        color: #ccc;
-        padding: 30px 0;
-        text-align: center;
-      "
-    >
-      <div style="margin-bottom: 10px">
-        <h2 style="color: white; margin-bottom: 10px">Group 410 Portfolio</h2>
-        <p style="margin: 5px">
-          <i class="fas fa-phone"></i> +254 712 345 678 &nbsp; | &nbsp;
-          <i class="fas fa-envelope"></i> Group410@gmail.com &nbsp; | &nbsp;
-          <i class="fas fa-map-marker-alt"></i> Tom Mboyo Street, Nairobi -
-          02000
-        </p>
-      </div>
-      <div
-        style="
-          border-top: 1px solid #5a5252;
-          padding-top: 10px;
-          font-size: 14px;
-        "
-      >
-        © 2025 Group 410 Portfolio. All Rights Reserved
-      </div>
-      <div class="icons" style="margin: 20px 0">
-        <a href="#" style="color: #ccc; margin: 0 10px"
-          ><i class="fab fa-facebook-f"></i
-        ></a>
-        <a href="#" style="color: #ccc; margin: 0 10px"
-          ><i class="fab fa-twitter"></i
-        ></a>
-        <a href="#" style="color: #ccc; margin: 0 10px"
-          ><i class="fab fa-google-plus-g"></i
-        ></a>
-        <a href="#" style="color: #ccc; margin: 0 10px"
-          ><i class="fab fa-github"></i
-        ></a>
-      </div>
+        <div class="row portfolio-area clearfix p-0 m-0">
+            <div class="col-lg-4 col-md-6 portfolio-item2 content" data-id="id-1" data-type="cat-item-1">
+                <span class="image-block">
+                    <a class="image-zoom" href="images/blog1.jpg" data-gal="prettyPhoto[gallery]">
+                        <div class="content-overlay"></div>
+                        <img src="images/blog1.jpg" class="img-fluid grouplayouts agileits" alt="portfolio-img">
+                        <div class="content-details fadeIn-bottom">
+                            <h3 class="content-title">Architecture</h3>
+                            
+                        </div>
+                    </a>
+                </span>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item2 content mt-md-0 mt-4" data-id="id-2" data-type="cat-item-2">
+                <span class="image-block">
+                    <a class="image-zoom" href="images/blog2.jpg" data-gal="prettyPhoto[gallery]">
+                        <div class="content-overlay"></div>
+                        <img src="images/blog2.jpg" class="img-fluid grouplayouts agileits" alt="portfolio-img">
+                        <div class="content-details fadeIn-bottom">
+                            <h3 class="content-title">Corporate</h3>
+                           
+                        </div>
+                    </a>
+                </span>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item2 content mt-lg-0 mt-4" data-id="id-3" data-type="cat-item-3">
+                <span class="image-block">
+                    <a class="image-zoom" href="images/blog3.jpg" data-gal="prettyPhoto[gallery]">
+                        <div class="content-overlay"></div>
+                        <img src="images/blog3.jpg" class="img-fluid grouplayouts agileits" alt="portfolio-img">
+                        <div class="content-details fadeIn-bottom">
+                            <h3 class="content-title">Ecommerce</h3>
+                           
+                        </div>
+                    </a>
+                </span>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item2 content mt-4" data-id="id-4" data-type="cat-item-4">
+                <span class="image-block">
+                    <a class="image-zoom" href="images/blog4.jpg" data-gal="prettyPhoto[gallery]">
+                        <div class="content-overlay"></div>
+                        <img src="images/blog4.jpg" class="img-fluid grouplayouts agileits" alt="portfolio-img">
+                        <div class="content-details fadeIn-bottom">
+                            <h3 class="content-title">Mobile UI</h3>
+                           
+                        </div>
+                    </a>
+                </span>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item2 content mt-4" data-id="id-5" data-type="cat-item-5">
+                <span class="image-block">
+                    <a class="image-zoom" href="images/blog5.jpg" data-gal="prettyPhoto[gallery]">
+                        <div class="content-overlay"></div>
+                        <img src="images/blog5.jpg" class="img-fluid grouplayouts agileits" alt="portfolio-img">
+                        <div class="content-details fadeIn-bottom">
+                            <h3 class="content-title">Fashion</h3>
+                            
+                        </div>
+                    </a>
+                </span>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item2 content mt-4" data-id="id-7" data-type="cat-item-6">
+                <span class="image-block">
+                    <a class="image-zoom" href="images/blog6.jpg" data-gal="prettyPhoto[gallery]">
+                        <div class="content-overlay"></div>
+                        <img src="images/blog6.jpg" class="img-fluid grouplayouts agileits" alt="portfolio-img">
+                        <div class="content-details fadeIn-bottom">
+                            <h3 class="content-title">Real Estate </h3>
+                           
+                        </div>
+                    </a>
+                </span>
+            </div>
+        </div>
+        <!--end portfolio-area -->
+    </div>
+    <!-- //gallery container -->
+</section>
+<!-- //portfolio -->
+     <!-- footer -->
+     <footer class="text-center" id="contact">
+        <div class="footer py-5">
+            <div class="container py-md-4">
+                <div clss="footer-logo">
+                    <a class="logo" href="index.html">
+                        <i class="fab fa-asymmetrik"></i> UI Portfolio
+                    </a>
+                </div>
+                <div class="footer-contact-info mt-4">
+                    <ul>
+                        <li>
+                            <a href="tel:+12 345 678 900" class="contact-text-sub">
+                                <span class="fas fa-phone me-2"></span>+12 345 678 900</a>
+                        </li>
+                        <li>
+                            <a href="#" class="contact-text-sub">
+                                <span class="fas fa-envelope me-2"></span><span>info@email.com</span> </a>
+                        </li>
+                        <li>
+                            <p class="contact-text-sub"> 
+                                <span class="fas fa-map-marker me-2"></span>208 Avenue street, UK - 62617.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container py-4">
+            <div class="row footer-grids">
+                <div class="col-lg-6 copyright text-lg-start text-center align-center">
+                    <p>© 2022 UI Portfolio. All Rights Reserved | Design by <a href="#"> PLP-Group624</a> </p>
+                </div>
+                <div class="col-lg-6 text-lg-end text-center mt-lg-0 mt-4">
+                    <div class="social">
+                        <ul>
+                            <li><a href="#"><span class="fab me-2 fa-facebook-f"></span></a></li>
+                            <li><a href="#"><span class="fab me-2 fa-twitter"></span></a></li>
+                            <li><a href="#"><span class="fab me-2 fa-google-plus"></span></a></li>
+                            <li><a href="#"><span class="fab me-2 fa-pinterest"></span></a></li>
+                            <li><a href="#"><span class="fab me-2 fa-vk"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
-  </body>
+    <!-- //footer -->
+
+
+
+    <script src="assets/js-nav/bootstrap.min.js"></script>
+</body>
+
+
 </html>
