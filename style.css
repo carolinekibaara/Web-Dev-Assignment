@@ -13,19 +13,12 @@ body {
 }
 
 <<<<<<< HEAD
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .container {
       padding: 10px;
     }
     .nav {
       flex-direction: column;
-    }
-  }
-  
-  
-  @media (max-width: 480px) {
-    h1 {
-      font-size: 24px;
     }
   }
   
@@ -39,11 +32,6 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     flex-direction: row;
 }
-=======
-@media (max-width: 600px){
-    
-}
-
   /* My Skills Section*/
 
 .skills-container {
